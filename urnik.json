@@ -1,0 +1,23 @@
+{
+    "everyone": {
+        "Pon": {"<subject>": "<time>"},
+        "Tor": {"MAT": "10:00"},
+        "Sre": {},
+        "Cet": {},
+        "Pet": {}
+    },
+    "role1": {
+        "Pon": {},
+        "Tor": {},
+        "Sre": {},
+        "Cet": {},
+        "Pet": {}
+    },
+    "role2": {
+        "Pon": {},
+        "Tor": {},
+        "Sre": {},
+        "Cet": {},
+        "Pet": {}
+    }
+}
