@@ -39,12 +39,13 @@ async def check_time():
                         embed = discord.Embed(colour=discord.Color.green())
                         embed.add_field(name=subject, value=f'Starts in {time_offset} minutes', inline=False)
                         if schedule == 'everyone':
-                            role_id = EVERYONE
-                        elif schedule == 'role2':
-                            role_id = role2
+                            await bot.get_channel(int(CHANNELID)).send(f'@everyone', embed=embed)
                         else:
-                            role_id = role1
-                        await bot.get_channel(int(CHANNELID)).send(f'<@&{role_id}>', embed=embed)
+                            if schedule == 'role1':
+                                role_id = ROLE1
+                            elif schedule == 'role2':
+                                role_id = ROLE2
+                            await bot.get_channel(int(CHANNELID)).send(f'<@&{role_id}>', embed=embed)
         await asyncio.sleep(60)
 
 
